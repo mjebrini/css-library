@@ -1,0 +1,49 @@
+	/**
+	 * create Mac style table with CSS 
+	 * @author Mohammed Jebrini Feb 9 2011 me@jebrini.net
+	 * @package css.assets 
+	 * @version 1.0.0.0 
+	 * @license MIT license
+	 */
+	#macTable 
+	{
+		font: normal 11px verdana;	
+	}
+	#macTable .tableHeader
+	{ 
+		background: #e1e1e1;
+		height:30px;
+		background: -moz-linear-gradient(top ,#e1e1e1 , #a0a0a0) ;
+		background: -webkit-gradient(linear,left top,left bottom, from(#e1e1e1), to(#a0a0a0));
+		filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e1e1e1', endColorstr='#a0a0a0'); /* IE6 & IE7 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e1e1e1', endColorstr='#a0a0a0')"; /* IE8 */
+		border-top: 1px solid #f3f3f3;
+	}
+	.tableTitle
+	{
+		border-top-left-radius:5px 5px;
+		border-top-right-radius: 5px 5px;
+		text-align:center; 
+		text-shadow:0px 1px 0px #e1e1e1;
+		border-bottom:1px #060606 solid;
+		-moz-border-radius-topleft:5px 5px;
+		-moz-border-radius-topright:5px 5px;
+		-webkit-border-top-left-radius:5px 5px;
+		-webkit-border-top-right-radius:5px 5px;
+	}
+	#macTable  td
+	{
+		border-bottom:1px solid #e1e1e1;
+		padding:3px;
+		background:#ededed;
+	}
+	#macTable  tr:hover td
+	{
+		background:#e9edf3;
+		cursor:pointer; 
+	}
+	#macTable a
+	{
+		color:#a0a0a0;
+		text-decoration:none;
+	}
