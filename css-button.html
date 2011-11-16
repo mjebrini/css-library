@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ar_SA">
+<head>
+	<meta charset="UTF-8">
+	<title> Slick CSS Button </title>
+<script type="text/javascript">
+	var url = "http://localhost/testAPI";
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="content"> 
+		<p> title </p>
+		<p> body </p>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var elem = $('p','#content'); 
+		for(var i =0 ; i < elem.length ;i++) 
+			$(elem[i],'#content').bind('click',clickHanlder);
+		 
+		
+		function clickHanlder(){
+		   var _this = $(this) ;
+		   var txt = _this.html();
+			_this.unbind('click')
+				 .html("<input type=\"text\" id='editable' value='"+ txt+"' />")
+				 .find("input").focus()
+				 .live('blur',function(){
+					var input = $(this);
+					input.parent().html(input.val()).bind('click',clickHanlder);
+			});
+		}
+	});
+</script>
+</body>
+</html>
