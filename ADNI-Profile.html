@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> My Profile Page  </title>
+		<style type="text/css">
+			body{
+				margin:0;
+				padding:0;
+				font: normal 13px verdana, tahoma, arial, "sans" ;
+			}
+			article#wrapper {
+				width:960px;
+				margin:0px auto;
+			}
+			header#mainHeader h1 {
+				font: bold 45px Georgia, verdana;
+				color:#777a7e;
+				-webkit-transition: all 1s ease-in-out 0s;
+				-webkit-transform: rotate(-5deg) ;
+				text-shadow:0px 1px 0px black ;
+			}
+			header#mainHeader h1:hover {
+				color:#3d8ad8;
+				-webkit-transform: rotate(0deg) ;
+			}
+			content#mainContent {
+				width:700px;
+				float:left;
+			}
+			
+			content#mainContent section header h1 {
+				font-size:20px;
+				-webkit-border-radius:5px;
+				background:#e1e1e1;
+				padding:10px 15px 10px 15px;
+				color:orange;
+				text-shadow:0px 1px 0px rgba(255,255,255,0.8);
+				border-bottom:1px solid #ccc;
+				box-shadow:0px 0px 2px #e2e2e2;
+				-webkit-transition:all 0.5s ease-in-out 0s;
+			}
+			content#mainContent section header h1:hover{
+				-webkit-transform: rotate(-3deg) scale(1.1);
+				color:white;
+				text-shadow:none;
+				background: -webkit-gradient(
+					linear, left top, left bottom,
+					from(#000) , to(gray)
+					);
+			}
+			aside{
+				width:260px;
+				float:right;
+			} 
+			.clear {
+				clear:both;
+			}
+		</style>
+	</head>
+	<body>
+		<article id="wrapper">
+		<!-- header box -->
+		<header id="mainHeader"> 
+			<h1> Porfolio Page </h1>	
+		</header>
+		<!-- end header box -->
+		
+		<!-- content box -->
+		<content id="mainContent">
+			<section id="header-1">
+				<header>
+					<h1> Mohammed Jebrini</h1>
+				</header>
+				<p class="text"></p>
+			</section>
+			<section id="header-2">
+				<header>
+					<h1> Skills </h1>
+				</header>
+				<p class="text"></p>
+			</section>
+			<section id="header-3">
+				<header>
+					<h1> Music </h1>
+				</header>
+				<p class="text"></p>
+			</section>
+			<section id="header-4">
+				<header>
+					<h1> Video </h1>
+				</header>
+				<p class="text"></p>
+			</section>
+			<section id="contact">
+				<header>
+					<h1> Contact </h1>
+				</header>
+				<p class="text">
+					<form>
+						<div class="row">
+							<select name="priority">
+								<option value="high">High</option>
+								<option value="normal" selected>Normal</option>
+								<option value="low">Low</option>
+							</select>
+							<label> Priority </label>
+						</div>	
+						<div class="row">
+							<input type="text" name="fullName" id="fullName"
+								   placeholder="e.g. John Smith" pattern="[A-Za-z]*" required/>
+							<label for="fullName"> Full Name </label>
+						</div>	
+						<div class="row">
+							<input type="email" name="email" placeholder="mail@example.com" required/>
+							<label > Email Address </label>
+						</div>
+						<div class="row">
+							<input type="url" name="site" placeholder="http://www.google.com" />
+							<label > Website  </label>
+						</div>
+						<div class="row">
+							<textarea rows="10" name="message" placeholder="write your message here!" required></textarea>
+							<label> Message </label>
+						</div>
+						<footer>
+							<hr>
+							<input type="submit" value="Send">
+							<input type="reset" value="Cancel">
+						</footer>
+					</form> 
+				</p>
+			</section>
+		</content>
+		<!-- end content box -->
+		
+		<!-- side box -->
+		<aside id="side"> 
+			<nav>
+				<ul>
+					<li><a href="" class="menuItem">link1</a></li>
+					<li><a href="" class="menuItem">link2</a></li>
+					<li><a href="" class="menuItem">link3</a></li>
+					<li><a href="" class="menuItem">link4</a></li>
+					<li><a href="" class="menuItem last">link5</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<!-- end side box -->
+		<div class="clear"></div>
+		<footer>
+			copyright &copy; reserved 2011 GNablus.
+		</footer>
+	</article>	
+	</body>
+</html>
